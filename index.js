@@ -26,14 +26,16 @@ menuLink.forEach(link => {
 hExperience.addEventListener('click', ()=> {
   education.style.display = 'none';
   skills.style.display = 'none';
-  experience.style.display = 'block';
+  experience.style.display = 'flex';
+  experience.style.flexDirection = 'column'
   hExperience.classList.add('pp');
   hEducation.classList.remove('pp');
   hSkills.classList.remove('pp');
 });
 
 hEducation.addEventListener('click', ()=> {
-  education.style.display = 'block';
+  education.style.display = 'flex';
+  education.style.flexDirection = 'column'
   skills.style.display = 'none';
   experience.style.display = 'none';
   hEducation.classList.add('pp');
@@ -43,7 +45,8 @@ hEducation.addEventListener('click', ()=> {
 
 hSkills.addEventListener('click', ()=> {
   education.style.display = 'none';
-  skills.style.display = 'block';
+  skills.style.display = 'flex';
+  skills.style.flexDirection = 'column'
   experience.style.display = 'none';
   hSkills.classList.add('pp')
   hEducation.classList.remove('pp');

@@ -115,8 +115,11 @@ p {
   position: absolute;
   background-color: var(--smoky-black);
   z-index: 2;
-  height: 100%;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
   width: 100%;
+  overflow: hidden;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -605,7 +608,7 @@ header img {
 
 .svg-box {
   display: flex;
-  gap: 2rem;
+  gap: 0rem;
 }
 .p-headers p {
   font-size: var(--p-lg-size);
@@ -627,8 +630,13 @@ header img {
   align-items: center;
   max-width: 1000px;
   height: 400px;
-  overflow: hidden;
+  overflow: scroll;
   gap: 1rem;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
 }
 
 .portfolio-item {
